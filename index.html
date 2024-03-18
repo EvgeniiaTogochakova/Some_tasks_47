@@ -78,48 +78,50 @@
     </header>
     <section class="arrivals center">
         <h1>NEW ARRIVALS</h1>
-        <nav class="breadcrumbs">
-            <a href="#" class="breadcrumbs__link">HOME</a>
-            <a href="#" class="breadcrumbs__link">MEN</a>
-            <a href="#" class="breadcrumbs__link">NEW ARRIVALS</a>
-        </nav>
+        <ul class="breadcrumbs">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">NEW ARRIVALS</a></li>
+        </ul>
     </section>
     <section class="filter-sort center">
-        <details class="filter">
-            <summary class="summary-ext">FILTER <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
-                        fill="black" />
-                </svg>
-            </summary>
-            <div class="filter__content">
-                <details class="filter__content__item" open>
-                    <summary class="summary-int">CATEGORY</summary>
-                    <div class="filter__content__link-box">
-                        <a href="#">Accessories</a>
-                        <a href="#">Bags</a>
-                        <a href="#">Denim</a>
-                        <a href="#">Hoodies & Sweatshirts</a>
-                        <a href="#">Jackets & Coats</a>
-                        <a href="#">Polos</a>
-                        <a href="#">Shirts</a>
-                        <a href="#">Shoes</a>
-                        <a href="#">Sweaters & Knits</a>
-                        <a href="#">T-Shirts</a>
-                        <a href="#">Tanks</a>
-                    </div>
-                </details>
-                <details class="filter__content__item">
-                    <summary class="summary-int">BRAND</summary>
-                </details>
-                <details class="filter__content__item">
-                    <summary class="summary-int">DESIGNER</summary>
-                </details>
+        <div class="filter-wrapper">
+            <details class="filter">
+                <summary class="summary-ext"><span class="cellphone_none">FILTER</span><svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                            fill="black" />
+                    </svg>
+                </summary>
+                <div class="filter__content">
+                    <details class="filter__content__item" open>
+                        <summary class="summary-int">CATEGORY</summary>
+                        <div class="filter__content__link-box">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </details>
+                    <details class="filter__content__item">
+                        <summary class="summary-int">BRAND</summary>
+                    </details>
+                    <details class="filter__content__item">
+                        <summary class="summary-int">DESIGNER</summary>
+                    </details>
 
 
-            </div>
-        </details>
+                </div>
+            </details>
+        </div>
         <div class="sort">
             <details class="sort__details">
                 <summary>TRENDING NOW <svg width="11" height="5" viewBox="0 0 11 5" fill="none"
@@ -197,7 +199,7 @@
                 <p class="catalog__card__price pink_colored">$52.00</p>
             </div>
         </article>
-        <article class="catalog__card">
+        <article class="catalog__card picture_none">
             <div class="catalog__card__img_wrapper">
                 <img src="./images/picture_young_man_in_hat.png" alt="picture picture young man in hat">
                 <button class="button_add_to_cart" value="Add To Cart">
@@ -343,17 +345,18 @@
     <section class="pagination">
         <div class="pages">
             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.99512 2L2.99512 7L7.99512 12L6.99512 14L-0.00488281 7L6.99512 0L7.99512 2Z" fill="black"/>
-                </svg>
-            <span>1</span> 
+                <path d="M7.99512 2L2.99512 7L7.99512 12L6.99512 14L-0.00488281 7L6.99512 0L7.99512 2Z" fill="black" />
+            </svg>
+            <span>1</span>
             <span>2</span>
             <span>3</span>
             <span>4</span>
             <span>5</span>
             <span>6.....20</span>
             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-0.00500488 12L4.995 7L-0.00500488 2L0.994995 0L7.995 7L0.994995 14L-0.00500488 12Z" fill="black"/>
-                </svg>
+                <path d="M-0.00500488 12L4.995 7L-0.00500488 2L0.994995 0L7.995 7L0.994995 14L-0.00500488 12Z"
+                    fill="black" />
+            </svg>
         </div>
     </section>
     <section class="advantages center">
